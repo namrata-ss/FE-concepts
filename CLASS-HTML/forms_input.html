@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        
+        <!-- input type--text,password,email,date,color -->
+        Name:<input type="text" required placeholder="Enter your namre"><br>
+        Password:<input type="password" placeholder="ENTER YOUR PASSWORD HERE"><br>
+        Email:<input type="email" name="" id=""><br>
+        DOB:<input type="date" name="" id=""><br>
+        Color for Portfolio: <input type="color" name="" id=""><br>
+
+        <!-- radio -->
+        Gender: 
+        <input type="radio" name="gender" id="">male
+        <input type="radio" name="gender" id="">female<br>
+        <br>
+
+        <!-- checkbox -->
+        Code: <input type="checkbox" name="" id="">HTML<br>
+        <input type="checkbox" name="" id="">CSS<br>
+        <input type="checkbox" name="" id="">TailWind<br>
+        <br>
+
+        <!-- search -->
+        <input type="search" required placeholder="Enter search text.." minlength="4"
+        maxlength="8" size="20" pattern="[A-z]{2}[0-9]{4}" name="" id="">
+        <button>search</button><br>
+
+        <!-- hidden -->
+        <!-- when we will submit it it will submitted with Id which is in hidden field (content=This+is+the+content+of+my+excellent+blog+post.&postId=34657) -->
+        blog post: <textarea name="content" id="content" cols="30" rows="10">
+        This is the content of my excellent blog post.
+        </textarea>
+        <input type="hidden" name="postId" value="5679">
+
+        <!-- file -->
+        <input type="file" multiple accept="image/png,.xls,.xlsx,video/*,.jpg" name="" id="">
+        <!-- range,image -->
+        
+        <input type="image" src="" alt="input image"><br>
+
+        <input type="range" min="0" max="100" value="90" step="10" name="" id=""><br>
+        
+        <!-- button,submit,reset -->
+        <input type="button" value="Edit"> <br>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br>
+
+        
+
+    </form>
+</body>
+</html>
