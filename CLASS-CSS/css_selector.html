@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        *{
+            background-color: #758283;
+        }
+
+        /* individual selector(element selector) */
+        p{
+            background-color: yellow;
+        }
+
+        /* class and id selector */
+        .warning{
+            background-color: orange;
+            color: white;
+        }
+        #danger{
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        /* and selector(chained) */
+        li.bg-black.text-white{
+            background-color: rgb(29, 20, 20);
+            color: rgb(47, 0, 255);
+
+        }
+        
+        /* combined selector */
+        span,h6{
+            background-color: burlywood;
+        }
+
+        /* inside an element */
+        div ul li{
+            background-color: blue;
+        }
+
+        /* direct child */
+        div > li{
+            background-color: rgb(191, 191, 233);
+        }
+
+        /* sibling ~ or +  */
+        .sibling + p {
+            background-color: pink;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>welcome to CSS selector</div>
+    <h6>welcome to CSS selector</h6>
+    <span>Span is just a span, nothing more</span>
+    <p>We all know paragraph</p>
+
+    <ul>
+        <li class="warning">item1</li>
+        <li id="danger">item2</li>
+        <li class="warning">item3</li>
+    </ul>
+
+    <ul>
+        <li class="bg-black text-white">item1</li>
+        <li class="bg-black">item2</li>
+        <li class="bg-black text-white">item3</li>
+    </ul>
+
+    <div>
+        <li class="item">awesome</li>
+    <ul>
+        <li class="item">highlight me</li>
+        <li class="item">highlight me</li>
+    </ul>
+    </div>
+    
+    <section>
+        <p>Test1</p>
+        <p>Test2</p>
+        <p class="sibling">Test3</p>
+        <p>Test4</p>
+    </section>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        /* position:  with respect to top bottom right and left */
+        .pos{
+            border: 1px solid red;
+            display:inline-block;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        p{
+            display: flex;
+            height: 1000px;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+        }
+
+        #four{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: yellow;
+        }
+
+        #one{
+            position: relative;
+            top: 10px;
+        }
+
+        #parent{
+            position: relative;
+        }
+        #child{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        #three{
+            position: sticky;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pos" id="one">One</div>
+        <div class="pos" id="two">Two</div>
+        <div class="pos"id="four">Four</div>
+        <div class="pos">Five</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore et odit tenetur iure iusto. Labore ipsam impedit quaerat expedita assumenda earum dolorem asperiores nihil sed eveniet ad eius, perferendis consequuntur dicta maiores possimus inventore architecto dolore? Reprehenderit fugit asperiores voluptatibus? Molestias aut nesciunt nostrum tempora fugit nobis nulla soluta asperiores expedita doloremque cumque quam ratione, beatae amet, explicabo illo earum ducimus nemo. Molestiae consectetur ducimus incidunt reprehenderit esse nemo optio!</p>
+        <div class="pos"id="three">Three</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ea, totam iusto voluptas tenetur culpa id, deserunt eveniet obcaecati officia repellendus modi labore dignissimos fuga natus repellat delectus distinctio odio cum iste vel? Rem reiciendis magnam tempore, temporibus quasi tempora voluptas. Molestias itaque magnam repellendus fugiat consequatur mollitia sed ab dolorum distinctio voluptate. Maxime consequuntur, aperiam itaque nam veniam quae magnam totam vero reiciendis impedit repellat tempora et sed, rem ratione non fugit. Labore sapiente numquam eaque asperiores molestias reiciendis dignissimos tenetur aliquam perspiciatis animi a, voluptas facere expedita explicabo? Numquam delectus nesciunt distinctio non voluptate voluptatem facilis et tenetur magnam odit reiciendis, consequuntur ducimus exercitationem explicabo cumque voluptas quas, repellendus alias ab. Voluptates maxime nam recusandae suscipit provident quisquam, ea perferendis impedit eum aut in nemo qui, iste aperiam alias aspernatur omnis corporis corrupti laborum. Animi, placeat. Omnis sunt accusamus dignissimos. A, numquam maiores! Adipisci itaque impedit ipsam iste molestias iusto quidem molestiae voluptas fugit laudantium placeat mollitia minus ad nulla facilis reprehenderit expedita nemo porro rerum, fugiat optio eligendi et esse. Voluptate doloremque fugiat neque ex alias, quaerat dignissimos consequatur sequi blanditiis exercitationem? Provident impedit consectetur itaque architecto veniam eaque consequuntur dolorum deserunt ab corporis a culpa, cumque tenetur possimus, quam placeat, laudantium enim quidem pariatur laborum reiciendis nesciunt animi. Aliquid, illo illum quasi, ab corrupti alias in laborum optio temporibus repellendus dolorum! Minima, exercitationem porro. Aliquid sequi, ab, dignissimos commodi molestiae quod officiis, fugiat ullam adipisci possimus saepe delectus vitae veritatis laboriosam. Eligendi molestias rerum et ipsum accusamus maxime rem ab aut tempore, repellendus totam, reiciendis quisquam debitis minus eum nostrum quis in omnis quo illo perferendis distinctio sunt numquam ullam? Mollitia animi repellendus, omnis nemo deleniti numquam nulla sapiente corrupti, dolorem ab repudiandae dicta quam aspernatur laborum sunt? Repudiandae deleniti in asperiores corporis, tempore unde, molestias consectetur est cumque quasi aliquid mollitia, harum ut laborum cupiditate adipisci placeat blanditiis dolor! Corporis repellat, cumque eveniet iusto velit quasi, ratione cum nisi commodi cupiditate libero quo at obcaecati hic ipsa mollitia. Ea dolore eveniet nobis aspernatur laboriosam, reiciendis quo iure tenetur sequi quae porro beatae doloribus veritatis placeat cupiditate neque esse, quas libero, sint fuga vitae. Numquam cupiditate omnis obcaecati, magni nihil pariatur iste necessitatibus consequuntur ipsa blanditiis nulla ea sequi impedit, consectetur enim rerum accusamus mollitia, eligendi doloremque est eos! Vel, molestias aperiam. Fugit facilis asperiores ut hic ipsam autem, fuga nisi nulla, repellat incidunt aperiam, excepturi tempora voluptatibus itaque fugiat odio! Itaque nostrum assumenda quidem, quas molestias eius incidunt distinctio, asperiores mollitia dolores ipsam animi ipsum at officia aliquam atque sint. Praesentium excepturi corrupti fugiat quis dolor quia sunt impedit est voluptatem, quasi nulla, deserunt perferendis minus! Maxime nostrum maiores ab in corrupti placeat laboriosam? Ad cumque animi facilis id cupiditate eius tempora repellat voluptatibus, sequi quis totam reiciendis, odio vitae natus enim excepturi voluptatem culpa omnis ab esse! Voluptates alias tempore tenetur sapiente dolorem odit aspernatur quaerat in est error enim voluptatum eius reiciendis sed, deleniti sit, saepe, autem deserunt officia. Velit praesentium in nisi.</p>
+        <div class="pos" id="parent">
+            <div class="pos" id="child">Child</div>
+        </div>
+    </div>
+</body>
+</html>

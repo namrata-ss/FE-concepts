@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* child selector */
+        div p{
+            color: blue;
+        }
+        /*  aDJACENT SIBLING(next to) ->sibling selector->instead of + we can also use ~ */
+
+        div + p{
+            color: brown;
+        }
+        /* class and id selector */
+        /* pseudo selector */
+        /* before:: after:: */
+        .warning::before{
+            content: "Danger";
+            color: brown;
+            font-size: 25px;
+        }
+        .quote::after{
+            content: "Javascript";
+            color: blueviolet;
+            font-size: 7px;
+        }
+        /* hover:,focus: */
+        /* input[type=text]:focus{
+            background-color: brown;
+        } */
+        input.custom:focus{
+            background-color: aqua;
+            border: none;
+        }
+
+        
+        </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, fuga.</p>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+    <div class="warning">
+        <p>Please use the website carefully</p>
+    </div>
+
+    <div class="quote">
+        <p>Easiest language to learn and hardest to master</p>
+    </div>
+
+    <a href="https://www.google.com/">Google</a><br>
+
+    <input type="text" name="" id="" class="custom">
+    <input type="email" name="" id="">
+</body>
+</html>

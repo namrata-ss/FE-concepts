@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA HTML</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .box{
+            height: 70px;
+            font-weight: 70px;
+            width: 70px;
+            border: 1px solid black;
+            margin: 10px;
+            text-align: center;
+        }
+        @media(max-width:500px){
+            body{
+                background-color: yellow;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        @media(min-width:501px) and (max-width:766px){
+            body{
+                background-color: purple;
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 50px;
+            }
+            .box{
+                border-radius: 50px;
+                background-color: yellow;
+                border: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">One</div>
+    <div class="box">Two</div>
+    <div class="box">Three</div>
+    <div class="box">Four</div>
+</body>
+</html>
