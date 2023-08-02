@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum</h1>
+    <p id="para1">Lorem ipsum dolor sit, <span>amet</span>consectetur adipisicing elit.</p>
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+    </ul>
+
+    <h1 class="title" id="title2">Heading 2</h1>
+
+    <script>
+        console.log(window);
+        console.log(window.document);
+        console.log(document);
+        console.log(document.body);
+        console.log(document.head);
+
+        let val = document.getElementById("para1");
+        console.log(val.innerHTML);
+        console.log(val.innerText);
+
+        let val2 = document.getElementsByClassName("tech");
+        console.log(val2)
+        console.log(val2[0].innerText);
+        val2[0].innerText  = "1";
+
+        let h1 = document.querySelector("#title2").innerText;
+        console.log(h1);
+
+        // alert
+        alert('Hello');
+        setTimeout ( () =>{
+            alert("Hello Developer");
+        }, 2000);
+
+        //Confirm Box
+
+        let confirmation = confirm("Are you sure?");
+        if(confirmation){
+            document.getElementById("para1").innerHTML = "He/She Pressed OK";
+        }else{
+            document.getElementById("para1").innerHTML = "He/She Pressed Cancel";
+        }
+
+        //Prompt
+        let promptVal = prompt("Plese Solve This 20 - 10");
+        if(promptVal == 10){
+            document.getElementById("para1").innerHTML = "Success";  
+        }
+        else{
+            document.getElementById("para1").innerHTML = "False";
+        }
+
+
+    </script>
+</body>
+</html>

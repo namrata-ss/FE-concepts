@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListner</title>
+</head>
+<body>
+    <h1>Learning Event Listner</h1>
+    <p id="js">Event Listner</p>
+
+    <script>
+        // here on click on the document change change innerText of para to mouse click using eventListner
+        document.addEventListener("click", hello);
+        function hello(){
+            document.getElementById("js").innerText = "Mouse click";
+        }
+        //Event --> click,dbclick,mouseenter,mouseleave,mouseover,input.keydown,keyup,keypress,onload
+        
+        // mouseenter
+        document.addEventListener("mouseenter", hello);
+        function hello(){
+            document.getElementById("js").innerText = "Mouse Enter";
+        }
+
+        //make small usecase senario for other event
+
+
+        // change any wesite content
+        // document.querySelector("#id").innerText = "Namrata";
+        // document.designMode = "on"
+        
+    </script>
+</body>
+</html>

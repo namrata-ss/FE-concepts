@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome in JS DOM Manipulation</h1>
+    <ul></ul>
+    <!-- create a button to learn event -->
+    <button id="mysubmit" onclick="math()">Submit</button>
+    <p id="mypara"></p>
+
+    <script>
+        //insert inner HTML
+        const list = `
+        <li>Namrata</li>
+        <li>Nidhi</li>
+        <li>Neha</li>
+        `;
+
+        const ul = document.querySelector("ul");
+        ul.innerHTML = list;
+
+        //create Element on Screen
+        let title = document.createElement("h1")
+        title.className = "title";
+        title.style.fontSize = "25px";
+        title.style.color = "green";
+        title.textContent = "Creating new element in DOM"
+        document.body.appendChild(title)
+
+        //Remove child(assignment)
+
+        //for loop(create element using for loop)
+        for(let i = 0; i < 3; i++){
+           let para = document.createElement("p");
+           para.className = "FSJS";
+           para.style.fontSize = "16px";
+           para.textContent = i ;
+           document.body.appendChild(para);
+        }
+
+        //function to handle submit button click event
+        function math(){
+            let value = prompt("Solve This 50 - 20");
+            if(value == 30){
+                document.getElementById("mypara").innerText = "Success Redirect";
+                document.getElementById("mysubmit").style.backgroundColor = "Green";
+            }
+            else{
+                document.getElementById("mypara").innerText = "Try again";
+                document.getElementById("mysubmit").style.backgroundColor = "Red";
+            }
+        }
+    </script>
+</body>
+</html>
