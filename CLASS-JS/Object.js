@@ -42,7 +42,7 @@ console.log(Object.getPrototypeOf(obj3))
 const obj4 = Oject.create({})
 Object.defineProperties(obj4, 'book',{
     icon: 'icon',
-    enuerable: true  //to make object enerable
+    enuerable: true  //to make object enuemerable
 })
 
 console.log(obj4);
